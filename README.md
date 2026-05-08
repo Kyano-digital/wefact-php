@@ -25,7 +25,7 @@ WEFACT_API_KEY=your-api-key-here
 ### Plain PHP setup
 
 ```php
-use Kyano\WeFact\WeFact;
+use KyanoDigital\WeFact\WeFact;
 
 $wefact = new WeFact(apiKey: 'your-api-key-here');
 ```
