@@ -1,0 +1,51 @@
+{
+  "name": "kyano-digital/wefact-php",
+  "description": "A complete PHP package for the WeFact API. Fluent interface and typed methods for every action documented at developer.wefact.com",
+  "keywords": [
+    "laravel",
+    "wefact",
+    "api",
+    "invoicing",
+    "facturering"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kyano Digital",
+      "email": "developers@kyano.digital"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "require-dev": {
+    "pestphp/pest": "^3.0",
+    "orchestra/testbench": "^8.0|^9.0",
+    "illuminate/support": "^10.0|^11.0|^12.0"
+  },
+  "suggest": {
+    "illuminate/support": "Required for Laravel integration."
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "KyanoDigital\\WeFact\\WeFactServiceProvider"
+      ],
+      "aliases": {
+        "WeFact": "KyanoDigital\\WeFact\\Facades\\WeFact"
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "KyanoDigital\\WeFact\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
