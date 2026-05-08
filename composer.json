@@ -1,6 +1,6 @@
 {
   "name": "kyano-digital/wefact-php",
-  "description": "A complete PHP package for the WeFact API. Fluent interface and typed methods for every action documented at developer.wefact.com",
+  "description": "A complete PHP package for the WeFact API covers all resources. Works with Laravel and plain PHP.",
   "keywords": [
     "laravel",
     "wefact",
