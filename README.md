@@ -29,3 +29,67 @@ use KyanoDigital\WeFact\WeFact;
 
 $wefact = new WeFact(apiKey: 'your-api-key-here');
 ```
+
+## Usage
+
+### Laravel
+
+```php
+use Kyano\WeFact\Facades\WeFact;
+
+WeFact::debtors()->add([
+    'CompanyName' => 'Company Inc.',
+    'EmailAddress' => 'employee@company.inc',
+]);
+
+WeFact::invoices()->add([
+    'DebtorCode' => 'DB10001',
+    'InvoiceLines' => [
+        ['Description' => 'Product', 'PriceExcl' => 150.00, 'TaxCode' => 'V21'],
+    ],
+]);
+```
+
+### Plain PHP
+
+```php
+use KyanoDigital\WeFact\WeFact;
+
+$wefact = new WeFact(apiKey: 'your-api-key-here');
+
+$debtor = $wefact->debtors()->add([
+    'CompanyName'  => 'Company Inc.',
+    'EmailAddress' => 'employee@company.inc',
+]);
+```
+
+---
+
+## Error Handling
+
+All methods throw `WeFactException` on API errors or HTTP failures.
+
+```php
+use Kyano\WeFact\Exceptions\WeFactException;
+
+try {
+    WeFact::invoices()->add([...]);
+} catch (WeFactException $e) {
+    // Human-readable message
+    $e->getMessage();
+
+    // Array of WeFact API error strings
+    $e->getApiErrors();
+
+    // Full raw API response
+    $e->getApiResponse();
+}
+```
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+Copyright (c) 2026 Kyano Digital B.V.
