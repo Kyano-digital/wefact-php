@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Resources;
 
 use KyanoDigital\WeFact\Exceptions\WeFactException;
 
-class Subscription extends Resource
+final class Subscription extends Resource
 {
     protected function controller(): string
     {
@@ -14,7 +16,7 @@ class Subscription extends Resource
     /**
      * Show a single subscription.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -30,7 +32,7 @@ class Subscription extends Resource
     /**
      * List subscriptions.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -46,7 +48,7 @@ class Subscription extends Resource
     /**
      * Create a subscription.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -62,7 +64,7 @@ class Subscription extends Resource
     /**
      * Update a subscription.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -78,7 +80,7 @@ class Subscription extends Resource
     /**
      * Terminate a subscription.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *

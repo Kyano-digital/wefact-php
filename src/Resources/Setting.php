@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Resources;
 
 use KyanoDigital\WeFact\Exceptions\WeFactException;
 
-class Setting extends Resource
+final class Setting extends Resource
 {
     protected function controller(): string
     {
@@ -14,7 +16,7 @@ class Setting extends Resource
     /**
      * List all settings.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -30,7 +32,7 @@ class Setting extends Resource
     /**
      * Show a single cost category.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -46,7 +48,7 @@ class Setting extends Resource
     /**
      * List cost categories.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -62,7 +64,7 @@ class Setting extends Resource
     /**
      * Create a cost category.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -78,7 +80,7 @@ class Setting extends Resource
     /**
      * Update a cost category.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -94,7 +96,7 @@ class Setting extends Resource
     /**
      * Delete a cost category.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *

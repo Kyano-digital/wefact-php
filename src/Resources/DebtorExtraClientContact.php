@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Resources;
 
 use KyanoDigital\WeFact\Exceptions\WeFactException;
 
-class DebtorExtraClientContact extends Resource
+final class DebtorExtraClientContact extends Resource
 {
     protected function controller(): string
     {
@@ -14,7 +16,7 @@ class DebtorExtraClientContact extends Resource
     /**
      * Add an extra contact to a debtor.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -30,7 +32,7 @@ class DebtorExtraClientContact extends Resource
     /**
      * Update an extra contact.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -46,7 +48,7 @@ class DebtorExtraClientContact extends Resource
     /**
      * Delete an extra contact.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *

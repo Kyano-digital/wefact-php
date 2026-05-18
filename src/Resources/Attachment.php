@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Resources;
 
 use KyanoDigital\WeFact\Exceptions\WeFactException;
 
-class Attachment extends Resource
+final class Attachment extends Resource
 {
     protected function controller(): string
     {
@@ -14,7 +16,7 @@ class Attachment extends Resource
     /**
      * Add an attachment to a resource.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -30,7 +32,7 @@ class Attachment extends Resource
     /**
      * Delete an attachment from a resource.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -46,7 +48,7 @@ class Attachment extends Resource
     /**
      * Download an attachment from a resource.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *

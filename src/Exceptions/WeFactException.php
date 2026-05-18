@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Exceptions;
 
 use RuntimeException;
 
-class WeFactException extends RuntimeException
+final class WeFactException extends RuntimeException
 {
     /**
      * @param  array<string, mixed> $apiResponse

@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Resources;
 
 use KyanoDigital\WeFact\Exceptions\WeFactException;
 
-class Transaction extends Resource
+final class Transaction extends Resource
 {
     protected function controller(): string
     {
@@ -14,7 +16,7 @@ class Transaction extends Resource
     /**
      * Show a single transaction.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -30,7 +32,7 @@ class Transaction extends Resource
     /**
      * List transactions.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -46,7 +48,7 @@ class Transaction extends Resource
     /**
      * Add a bank transaction.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -62,7 +64,7 @@ class Transaction extends Resource
     /**
      * Match a transaction to one or more invoices or credit invoices.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -78,7 +80,7 @@ class Transaction extends Resource
     /**
      * Delete a transaction.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -94,7 +96,7 @@ class Transaction extends Resource
     /**
      * Ignore a transaction.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *

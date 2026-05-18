@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Facades;
 
 use Illuminate\Support\Facades\Facade;
@@ -39,11 +41,11 @@ use KyanoDigital\WeFact\Resources\Transaction;
  * @method static Subscription             subscriptions()
  * @method static Task                     tasks()
  * @method static Transaction              transactions()
- * @method static array<string, mixed>     request(string $controller, string $action, array $params = [])
+ * @method static array<string, mixed>     request(string $controller, string $action, array<string, mixed> $params = [])
  *
  * @see \KyanoDigital\WeFact\WeFact
  */
-class WeFact extends Facade
+final class WeFact extends Facade
 {
     protected static function getFacadeAccessor(): string
     {

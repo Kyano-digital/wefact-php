@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Resources;
 
 use KyanoDigital\WeFact\Exceptions\WeFactException;
 
-class InvoiceLine extends Resource
+final class InvoiceLine extends Resource
 {
     protected function controller(): string
     {
@@ -14,7 +16,7 @@ class InvoiceLine extends Resource
     /**
      * Add a line to an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -30,7 +32,7 @@ class InvoiceLine extends Resource
     /**
      * Delete a line from an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *

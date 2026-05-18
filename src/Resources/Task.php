@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Resources;
 
 use KyanoDigital\WeFact\Exceptions\WeFactException;
 
-class Task extends Resource
+final class Task extends Resource
 {
     protected function controller(): string
     {
@@ -14,7 +16,7 @@ class Task extends Resource
     /**
      * Show a single task.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -30,7 +32,7 @@ class Task extends Resource
     /**
      * List tasks.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -46,7 +48,7 @@ class Task extends Resource
     /**
      * Create a task.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -62,7 +64,7 @@ class Task extends Resource
     /**
      * Update a task.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -78,7 +80,7 @@ class Task extends Resource
     /**
      * Change the status of a task.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *

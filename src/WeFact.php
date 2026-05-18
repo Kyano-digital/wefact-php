@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact;
 
 use GuzzleHttp\Client;
@@ -23,7 +25,7 @@ use KyanoDigital\WeFact\Resources\Subscription;
 use KyanoDigital\WeFact\Resources\Task;
 use KyanoDigital\WeFact\Resources\Transaction;
 
-class WeFact
+final class WeFact
 {
     protected Client $http;
 

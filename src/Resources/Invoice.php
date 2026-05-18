@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Resources;
 
 use KyanoDigital\WeFact\Exceptions\WeFactException;
 
-class Invoice extends Resource
+final class Invoice extends Resource
 {
     protected function controller(): string
     {
@@ -14,7 +16,7 @@ class Invoice extends Resource
     /**
      * Show a single invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -30,7 +32,7 @@ class Invoice extends Resource
     /**
      * List invoices.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -46,7 +48,7 @@ class Invoice extends Resource
     /**
      * Create an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -62,7 +64,7 @@ class Invoice extends Resource
     /**
      * Update an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -78,7 +80,7 @@ class Invoice extends Resource
     /**
      * Delete an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -94,7 +96,7 @@ class Invoice extends Resource
     /**
      * Credit an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -110,7 +112,7 @@ class Invoice extends Resource
     /**
      * Register a partial payment for an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -126,7 +128,7 @@ class Invoice extends Resource
     /**
      * Mark an invoice as paid.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -142,7 +144,7 @@ class Invoice extends Resource
     /**
      * Mark an invoice as unpaid.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -158,7 +160,7 @@ class Invoice extends Resource
     /**
      * Send an invoice by email.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -174,7 +176,7 @@ class Invoice extends Resource
     /**
      * Send an invoice reminder by email.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -190,7 +192,7 @@ class Invoice extends Resource
     /**
      * Send an invoice summation by email.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -206,7 +208,7 @@ class Invoice extends Resource
     /**
      * Download an invoice as PDF.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -222,7 +224,7 @@ class Invoice extends Resource
     /**
      * Block an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -238,7 +240,7 @@ class Invoice extends Resource
     /**
      * Unblock an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -254,7 +256,7 @@ class Invoice extends Resource
     /**
      * Schedule an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -270,7 +272,7 @@ class Invoice extends Resource
     /**
      * Cancel a scheduled invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -286,7 +288,7 @@ class Invoice extends Resource
     /**
      * Pause the payment process of an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -302,7 +304,7 @@ class Invoice extends Resource
     /**
      * Reactivate the payment process of an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -318,7 +320,7 @@ class Invoice extends Resource
     /**
      * Sort the lines of an invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *

@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Resources;
 
 use KyanoDigital\WeFact\Exceptions\WeFactException;
 
-class CreditInvoice extends Resource
+final class CreditInvoice extends Resource
 {
     protected function controller(): string
     {
@@ -14,7 +16,7 @@ class CreditInvoice extends Resource
     /**
      * Show a single credit invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -30,7 +32,7 @@ class CreditInvoice extends Resource
     /**
      * List credit invoices.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -46,7 +48,7 @@ class CreditInvoice extends Resource
     /**
      * Create a credit invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -62,7 +64,7 @@ class CreditInvoice extends Resource
     /**
      * Update a credit invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -78,7 +80,7 @@ class CreditInvoice extends Resource
     /**
      * Delete a credit invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -94,7 +96,7 @@ class CreditInvoice extends Resource
     /**
      * Register a partial payment for a credit invoice.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -110,7 +112,7 @@ class CreditInvoice extends Resource
     /**
      * Mark a credit invoice as paid.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *

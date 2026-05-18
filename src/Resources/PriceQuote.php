@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Resources;
 
 use KyanoDigital\WeFact\Exceptions\WeFactException;
 
-class PriceQuote extends Resource
+final class PriceQuote extends Resource
 {
     protected function controller(): string
     {
@@ -14,7 +16,7 @@ class PriceQuote extends Resource
     /**
      * Show a single price quote.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -30,7 +32,7 @@ class PriceQuote extends Resource
     /**
      * List price quotes.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -46,7 +48,7 @@ class PriceQuote extends Resource
     /**
      * Create a price quote.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -62,7 +64,7 @@ class PriceQuote extends Resource
     /**
      * Update a price quote.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -78,7 +80,7 @@ class PriceQuote extends Resource
     /**
      * Delete a price quote.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -94,7 +96,7 @@ class PriceQuote extends Resource
     /**
      * Send a price quote by email.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -110,7 +112,7 @@ class PriceQuote extends Resource
     /**
      * Download a price quote as PDF.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -126,7 +128,7 @@ class PriceQuote extends Resource
     /**
      * Schedule a price quote.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -142,7 +144,7 @@ class PriceQuote extends Resource
     /**
      * Cancel a scheduled price quote.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -158,7 +160,7 @@ class PriceQuote extends Resource
     /**
      * Accept a price quote.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -174,7 +176,7 @@ class PriceQuote extends Resource
     /**
      * Decline a price quote.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -190,7 +192,7 @@ class PriceQuote extends Resource
     /**
      * Archive a price quote.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -206,7 +208,7 @@ class PriceQuote extends Resource
     /**
      * Sort the lines of a price quote.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *

@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace KyanoDigital\WeFact\Resources;
 
 use KyanoDigital\WeFact\Exceptions\WeFactException;
 
-class PriceQuoteLine extends Resource
+final class PriceQuoteLine extends Resource
 {
     protected function controller(): string
     {
@@ -14,7 +16,7 @@ class PriceQuoteLine extends Resource
     /**
      * Add a line to a price quote.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
@@ -30,7 +32,7 @@ class PriceQuoteLine extends Resource
     /**
      * Delete a line from a price quote.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      *
      * @return array<string, mixed>
      *
