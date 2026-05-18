@@ -12,9 +12,15 @@ class CreditInvoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Show a single credit invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditinvoice/show
      */
     public function show(array $params): array
     {
@@ -22,9 +28,15 @@ class CreditInvoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * List credit invoices.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditinvoice/list
      */
     public function list(array $params = []): array
     {
@@ -32,9 +44,15 @@ class CreditInvoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Create a credit invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditinvoice/add
      */
     public function add(array $params): array
     {
@@ -42,9 +60,15 @@ class CreditInvoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Update a credit invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditinvoice/edit
      */
     public function edit(array $params): array
     {
@@ -52,9 +76,15 @@ class CreditInvoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Delete a credit invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditinvoice/delete
      */
     public function delete(array $params): array
     {
@@ -62,9 +92,15 @@ class CreditInvoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Register a partial payment for a credit invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditinvoice/partpayment
      */
     public function partPayment(array $params): array
     {
@@ -72,9 +108,15 @@ class CreditInvoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Mark a credit invoice as paid.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditinvoice/markaspaid
      */
     public function markAsPaid(array $params): array
     {

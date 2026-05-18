@@ -14,11 +14,13 @@ class DebtorExtraClientContact extends Resource
     /**
      * Add an extra contact to a debtor.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/debtor/extraclientcontact/add
      */
     public function add(array $params): array
     {
@@ -28,11 +30,13 @@ class DebtorExtraClientContact extends Resource
     /**
      * Update an extra contact.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/debtor/extraclientcontact/edit
      */
     public function edit(array $params): array
     {
@@ -42,11 +46,13 @@ class DebtorExtraClientContact extends Resource
     /**
      * Delete an extra contact.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/debtor/extraclientcontact/delete
      */
     public function delete(array $params): array
     {

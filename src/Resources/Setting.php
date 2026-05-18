@@ -14,11 +14,13 @@ class Setting extends Resource
     /**
      * List all settings.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/setting/list
      */
     public function list(array $params = []): array
     {
@@ -28,11 +30,13 @@ class Setting extends Resource
     /**
      * Show a single cost category.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/setting/costcategory/show
      */
     public function showCostCategory(array $params): array
     {
@@ -42,11 +46,13 @@ class Setting extends Resource
     /**
      * List cost categories.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/setting/costcategory/list
      */
     public function listCostCategories(array $params = []): array
     {
@@ -56,11 +62,13 @@ class Setting extends Resource
     /**
      * Create a cost category.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/setting/costcategory/add
      */
     public function addCostCategory(array $params): array
     {
@@ -70,11 +78,13 @@ class Setting extends Resource
     /**
      * Update a cost category.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/setting/costcategory/edit
      */
     public function editCostCategory(array $params): array
     {
@@ -84,11 +94,13 @@ class Setting extends Resource
     /**
      * Delete a cost category.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/setting/costcategory/delete
      */
     public function deleteCostCategory(array $params): array
     {

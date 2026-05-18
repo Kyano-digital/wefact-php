@@ -12,9 +12,15 @@ class Task extends Resource
     }
 
     /**
-     * @param  array $params
+     * Show a single task.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/task/show
      */
     public function show(array $params): array
     {
@@ -22,9 +28,15 @@ class Task extends Resource
     }
 
     /**
-     * @param  array $params
+     * List tasks.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/task/list
      */
     public function list(array $params = []): array
     {
@@ -32,9 +44,15 @@ class Task extends Resource
     }
 
     /**
-     * @param  array $params
+     * Create a task.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/task/add
      */
     public function add(array $params): array
     {
@@ -42,9 +60,15 @@ class Task extends Resource
     }
 
     /**
-     * @param  array $params
+     * Update a task.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/task/edit
      */
     public function edit(array $params): array
     {
@@ -52,9 +76,15 @@ class Task extends Resource
     }
 
     /**
-     * @param  array $params
+     * Change the status of a task.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/task/changestatus
      */
     public function changeStatus(array $params): array
     {

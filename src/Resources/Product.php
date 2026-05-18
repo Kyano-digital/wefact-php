@@ -14,11 +14,13 @@ class Product extends Resource
     /**
      * Show a single product.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/product/show
      */
     public function show(array $params): array
     {
@@ -28,11 +30,13 @@ class Product extends Resource
     /**
      * List products.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/product/list
      */
     public function list(array $params = []): array
     {
@@ -42,11 +46,13 @@ class Product extends Resource
     /**
      * Create a product.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/product/add
      */
     public function add(array $params): array
     {
@@ -56,11 +62,13 @@ class Product extends Resource
     /**
      * Update a product.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/product/edit
      */
     public function edit(array $params): array
     {
@@ -70,11 +78,13 @@ class Product extends Resource
     /**
      * Delete a product.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/product/delete
      */
     public function delete(array $params): array
     {

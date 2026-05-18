@@ -14,11 +14,13 @@ class Transaction extends Resource
     /**
      * Show a single transaction.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/transaction/show
      */
     public function show(array $params): array
     {
@@ -28,11 +30,13 @@ class Transaction extends Resource
     /**
      * List transactions.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/transaction/list
      */
     public function list(array $params = []): array
     {
@@ -42,11 +46,13 @@ class Transaction extends Resource
     /**
      * Add a bank transaction.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/transaction/add
      */
     public function add(array $params): array
     {
@@ -56,11 +62,13 @@ class Transaction extends Resource
     /**
      * Match a transaction to one or more invoices or credit invoices.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/transaction/match
      */
     public function match(array $params): array
     {
@@ -70,11 +78,13 @@ class Transaction extends Resource
     /**
      * Delete a transaction.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/transaction/delete
      */
     public function delete(array $params): array
     {
@@ -82,13 +92,15 @@ class Transaction extends Resource
     }
 
     /**
-     * Ignore a transaction (will not appear in unmatched list).
+     * Ignore a transaction.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/transaction/ignore
      */
     public function ignore(array $params): array
     {

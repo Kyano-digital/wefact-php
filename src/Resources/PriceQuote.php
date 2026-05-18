@@ -12,9 +12,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * @param  array $params
+     * Show a single price quote.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/show
      */
     public function show(array $params): array
     {
@@ -22,9 +28,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * @param  array $params
+     * List price quotes.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/list
      */
     public function list(array $params = []): array
     {
@@ -32,9 +44,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * @param  array $params
+     * Create a price quote.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/add
      */
     public function add(array $params): array
     {
@@ -42,9 +60,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * @param  array $params
+     * Update a price quote.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/edit
      */
     public function edit(array $params): array
     {
@@ -52,9 +76,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * @param  array $params
+     * Delete a price quote.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/delete
      */
     public function delete(array $params): array
     {
@@ -62,9 +92,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * @param  array $params
+     * Send a price quote by email.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/sendbyemail
      */
     public function sendByEmail(array $params): array
     {
@@ -72,11 +108,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * Returns base64-encoded PDF in response['pricequote']['PDF'].
+     * Download a price quote as PDF.
      *
-     * @param  array $params
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/download
      */
     public function download(array $params): array
     {
@@ -84,9 +124,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * @param  array $params
+     * Schedule a price quote.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/schedule
      */
     public function schedule(array $params): array
     {
@@ -94,9 +140,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * @param  array $params
+     * Cancel a scheduled price quote.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/cancel-schedule
      */
     public function cancelSchedule(array $params): array
     {
@@ -104,9 +156,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * @param  array $params
+     * Accept a price quote.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/accept
      */
     public function accept(array $params): array
     {
@@ -114,9 +172,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * @param  array $params
+     * Decline a price quote.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/decline
      */
     public function decline(array $params): array
     {
@@ -124,9 +188,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * @param  array $params
+     * Archive a price quote.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/archive
      */
     public function archive(array $params): array
     {
@@ -134,9 +204,15 @@ class PriceQuote extends Resource
     }
 
     /**
-     * @param  array $params
+     * Sort the lines of a price quote.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/sortlines
      */
     public function sortLines(array $params): array
     {

@@ -14,11 +14,13 @@ class Attachment extends Resource
     /**
      * Add an attachment to a resource.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditor/attachment/add
      */
     public function add(array $params): array
     {
@@ -28,11 +30,13 @@ class Attachment extends Resource
     /**
      * Delete an attachment from a resource.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditor/attachment/delete
      */
     public function delete(array $params): array
     {
@@ -42,13 +46,13 @@ class Attachment extends Resource
     /**
      * Download an attachment from a resource.
      *
-     * Returns base64-encoded file contents in response['file'].
-     *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditor/attachment/download
      */
     public function download(array $params): array
     {

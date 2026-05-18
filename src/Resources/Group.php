@@ -14,11 +14,13 @@ class Group extends Resource
     /**
      * Show a single group.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/group/show
      */
     public function show(array $params): array
     {
@@ -28,11 +30,13 @@ class Group extends Resource
     /**
      * List groups.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/group/list
      */
     public function list(array $params = []): array
     {
@@ -42,11 +46,13 @@ class Group extends Resource
     /**
      * Create a group.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/group/add
      */
     public function add(array $params): array
     {
@@ -56,11 +62,13 @@ class Group extends Resource
     /**
      * Update a group.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/group/edit
      */
     public function edit(array $params): array
     {
@@ -70,11 +78,13 @@ class Group extends Resource
     /**
      * Delete a group.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/group/delete
      */
     public function delete(array $params): array
     {

@@ -14,11 +14,13 @@ class PriceQuoteLine extends Resource
     /**
      * Add a line to a price quote.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/pricequoteline/add
      */
     public function add(array $params): array
     {
@@ -28,11 +30,13 @@ class PriceQuoteLine extends Resource
     /**
      * Delete a line from a price quote.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/pricequote/pricequoteline/delete
      */
     public function delete(array $params): array
     {

@@ -14,11 +14,13 @@ class Subscription extends Resource
     /**
      * Show a single subscription.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/subscription/show
      */
     public function show(array $params): array
     {
@@ -28,11 +30,13 @@ class Subscription extends Resource
     /**
      * List subscriptions.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/subscription/list
      */
     public function list(array $params = []): array
     {
@@ -42,11 +46,13 @@ class Subscription extends Resource
     /**
      * Create a subscription.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/subscription/add
      */
     public function add(array $params): array
     {
@@ -56,11 +62,13 @@ class Subscription extends Resource
     /**
      * Update a subscription.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/subscription/edit
      */
     public function edit(array $params): array
     {
@@ -70,11 +78,13 @@ class Subscription extends Resource
     /**
      * Terminate a subscription.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/subscription/terminate
      */
     public function terminate(array $params): array
     {

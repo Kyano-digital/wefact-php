@@ -12,9 +12,15 @@ class Creditor extends Resource
     }
 
     /**
-     * @param  array $params
+     * Show a single creditor.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditor/show
      */
     public function show(array $params): array
     {
@@ -22,9 +28,15 @@ class Creditor extends Resource
     }
 
     /**
-     * @param  array $params
+     * List creditors.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditor/list
      */
     public function list(array $params = []): array
     {
@@ -32,9 +44,15 @@ class Creditor extends Resource
     }
 
     /**
-     * @param  array $params
+     * Create a creditor.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditor/add
      */
     public function add(array $params): array
     {
@@ -42,9 +60,15 @@ class Creditor extends Resource
     }
 
     /**
-     * @param  array $params
+     * Update a creditor.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditor/edit
      */
     public function edit(array $params): array
     {
@@ -52,9 +76,15 @@ class Creditor extends Resource
     }
 
     /**
-     * @param  array $params
+     * Delete a creditor.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditor/delete
      */
     public function delete(array $params): array
     {

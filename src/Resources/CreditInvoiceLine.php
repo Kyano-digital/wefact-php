@@ -14,11 +14,13 @@ class CreditInvoiceLine extends Resource
     /**
      * Add a line to a credit invoice.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditinvoice/creditinvoiceline/add
      */
     public function add(array $params): array
     {
@@ -28,11 +30,13 @@ class CreditInvoiceLine extends Resource
     /**
      * Delete a line from a credit invoice.
      *
-     * @param  array $params
+     * @param  array  $params
      *
      * @return array<string, mixed>
      *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/creditinvoice/creditinvoiceline/delete
      */
     public function delete(array $params): array
     {

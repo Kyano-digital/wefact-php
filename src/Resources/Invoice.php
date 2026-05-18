@@ -12,9 +12,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Show a single invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/show
      */
     public function show(array $params): array
     {
@@ -22,9 +28,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * List invoices.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/list
      */
     public function list(array $params = []): array
     {
@@ -32,9 +44,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Create an invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/add
      */
     public function add(array $params): array
     {
@@ -42,9 +60,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Update an invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/edit
      */
     public function edit(array $params): array
     {
@@ -52,9 +76,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Delete an invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/delete
      */
     public function delete(array $params): array
     {
@@ -62,9 +92,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Credit an invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/credit
      */
     public function credit(array $params): array
     {
@@ -72,9 +108,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Register a partial payment for an invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/partpayment
      */
     public function partPayment(array $params): array
     {
@@ -82,9 +124,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Mark an invoice as paid.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/markaspaid
      */
     public function markAsPaid(array $params): array
     {
@@ -92,9 +140,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Mark an invoice as unpaid.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/markasunpaid
      */
     public function markAsUnpaid(array $params): array
     {
@@ -102,9 +156,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Send an invoice by email.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/sendbyemail
      */
     public function sendByEmail(array $params): array
     {
@@ -112,9 +172,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Send an invoice reminder by email.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/sendreminderbyemail
      */
     public function sendReminderByEmail(array $params): array
     {
@@ -122,9 +188,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Send an invoice summation by email.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/sendsummationbyemail
      */
     public function sendSummationByEmail(array $params): array
     {
@@ -132,11 +204,15 @@ class Invoice extends Resource
     }
 
     /**
-     * Returns base64-encoded PDF in response['invoice']['PDF'].
+     * Download an invoice as PDF.
      *
-     * @param  array $params
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/download
      */
     public function download(array $params): array
     {
@@ -144,9 +220,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Block an invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/block
      */
     public function block(array $params): array
     {
@@ -154,9 +236,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Unblock an invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/unblock
      */
     public function unblock(array $params): array
     {
@@ -164,9 +252,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Schedule an invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/schedule
      */
     public function schedule(array $params): array
     {
@@ -174,9 +268,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Cancel a scheduled invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/cancel-schedule
      */
     public function cancelSchedule(array $params): array
     {
@@ -184,9 +284,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Pause the payment process of an invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/payment-process/pause
      */
     public function pausePaymentProcess(array $params): array
     {
@@ -194,9 +300,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Reactivate the payment process of an invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/payment-process/reactivate
      */
     public function reactivatePaymentProcess(array $params): array
     {
@@ -204,9 +316,15 @@ class Invoice extends Resource
     }
 
     /**
-     * @param  array $params
+     * Sort the lines of an invoice.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/invoice/sortlines
      */
     public function sortLines(array $params): array
     {

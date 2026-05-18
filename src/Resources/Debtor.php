@@ -12,9 +12,15 @@ class Debtor extends Resource
     }
 
     /**
-     * @param  array $params
+     * Show a single debtor.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/debtor/show
      */
     public function show(array $params): array
     {
@@ -22,9 +28,15 @@ class Debtor extends Resource
     }
 
     /**
-     * @param  array $params
+     * List debtors.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/debtor/list
      */
     public function list(array $params = []): array
     {
@@ -32,9 +44,15 @@ class Debtor extends Resource
     }
 
     /**
-     * @param  array $params
+     * Create a debtor.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/debtor/add
      */
     public function add(array $params): array
     {
@@ -42,9 +60,15 @@ class Debtor extends Resource
     }
 
     /**
-     * @param  array $params
+     * Update a debtor.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/debtor/edit
      */
     public function edit(array $params): array
     {

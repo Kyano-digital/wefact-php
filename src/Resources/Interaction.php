@@ -12,9 +12,15 @@ class Interaction extends Resource
     }
 
     /**
-     * @param  array $params
+     * Show a single interaction.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/interaction/show
      */
     public function show(array $params): array
     {
@@ -22,9 +28,15 @@ class Interaction extends Resource
     }
 
     /**
-     * @param  array $params
+     * List interactions.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/interaction/list
      */
     public function list(array $params = []): array
     {
@@ -32,9 +44,15 @@ class Interaction extends Resource
     }
 
     /**
-     * @param  array $params
+     * Create an interaction.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/interaction/add
      */
     public function add(array $params): array
     {
@@ -42,9 +60,15 @@ class Interaction extends Resource
     }
 
     /**
-     * @param  array $params
+     * Update an interaction.
+     *
+     * @param  array  $params
+     *
      * @return array<string, mixed>
+     *
      * @throws WeFactException
+     *
+     * @see https://developer.wefact.com/interaction/edit
      */
     public function edit(array $params): array
     {
