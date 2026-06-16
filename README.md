@@ -35,7 +35,7 @@ $wefact = new WeFact(apiKey: 'your-api-key-here');
 ### Laravel
 
 ```php
-use Kyano\WeFact\Facades\WeFact;
+use KyanoDigital\WeFact\Facades\WeFact;
 
 WeFact::debtors()->add([
     'CompanyName' => 'Company Inc.',
@@ -70,7 +70,7 @@ $debtor = $wefact->debtors()->add([
 All methods throw `WeFactException` on API errors or HTTP failures.
 
 ```php
-use Kyano\WeFact\Exceptions\WeFactException;
+use KyanoDigital\WeFact\Exceptions\WeFactException;
 
 try {
     WeFact::invoices()->add([...]);
