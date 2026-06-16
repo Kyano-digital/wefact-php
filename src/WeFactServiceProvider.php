@@ -30,7 +30,7 @@ final class WeFactServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/wefact.php' => config_path('wefact.php'),
-        ], 'wefact-config');
+        ], 'wefact');
     }
 
     /**

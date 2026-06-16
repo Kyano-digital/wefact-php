@@ -13,7 +13,7 @@ composer require kyano-digital/wefact-php
 Laravel auto-discovers the ServiceProvider and Facade. Publish the config:
 
 ```bash
-php artisan vendor:publish --tag=wefact-config
+php artisan vendor:publish --tag=wefact
 ```
 
 Add your API key to `.env`:
